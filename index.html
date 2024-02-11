@@ -24,7 +24,9 @@
             background-attachment: fixed;
             color: #800080; /* Purple text color */
         }
-
+ *{
+     box-sizing: border-box;
+ }
         h1 {
             color: #FFFFFF; /* Purple text color */
             text-align: center;
@@ -256,11 +258,20 @@ margin: 0 auto;
         // Start observing the container
         observer.observe(satisfiedContainer);
     </script>
-
+    <style>
+        .footer a {
+            color: white;
+            //text-decoration: none;
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+    </style>
     <div class="footer">
-
-        &copy; 2024 El Teide Notifications | RepoGamesStudio | Contact: therepo90@gmail.com
+        &copy; 2024 El Teide Notifications | RepoGamesStudio |
+        <a href="/terms_and_conditions.html">Terms and Conditions</a> |
+        Contact: <a href="mailto:therepo90@gmail.com">therepo90@gmail.com</a>
     </div>
+
 
 </body>
 
