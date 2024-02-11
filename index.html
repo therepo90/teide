@@ -66,6 +66,7 @@ margin: 0 auto;
         }
 
         .link {
+            height: 30px;
             display: block;
             background-color: #800080; /* Purple background color */
             color: #fff;
@@ -73,7 +74,7 @@ margin: 0 auto;
             text-decoration: none;
             border-radius: 8px;
             font-size: 18px;
-width: 100px;
+width: 170px;
 margin: 0 auto;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
@@ -144,12 +145,40 @@ margin: 0 auto;
 <h2 style="text-align:center;color:white;">Get notified when there is available free slot</h2>
     <div class="container">
         <p>So you have planned your trip to Tenerife, but there are no free places to climb to the top of Pico Del Teide?</p>
-        <p>This app instantly notifies you by email when a seat becomes available for reservation and booking        <span class="info" style="text-align:center;">for free</span>.</p>
+        <p>This app instantly notifies you by email when a seat becomes available for reservation and booking.</p>
         <p>Just fill out the form, and the notification will come to your email. In the form, you specify the date range you are interested in.</p>
 
+<style>
+    .buttonz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+        flex-wrap: wrap;
+}
 
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScErXioa35f3Z65H0PTlwX-jJi8cw8jJ2c2Z-TxILXC0235Vg/viewform?usp=sf_link" class="link" title="Get Notified for El Teide Climbing Slots">Get Notified</a>
-<p style="text-align:center;">
+    @media (max-width: 992px) {
+        .buttonz {
+            flex-direction: column;
+        }
+        .link2 {
+            margin-top: 12px;
+        }
+
+    }
+</style>
+        <div class="buttonz">
+            <a  class="link link2" href="https://docs.google.com/forms/d/e/1FAIpQLScErXioa35f3Z65H0PTlwX-jJi8cw8jJ2c2Z-TxILXC0235Vg/viewform?usp=sf_link" title="Get Notified for El Teide Climbing Slots" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="https://teidepermit.eu/eu.png" alt="Polish Flag" width="30" height="30" style="margin-right: 5px;">
+                <span style="font-size: 16px;">Get Notified(EN)</span>
+            </a>
+        <a   class="link link2" href="https://docs.google.com/forms/d/e/1FAIpQLSfVAP4Chl1TD3c9BpmUAM3DqHNNK4KYXIpj6n8OPD-igeon5w/viewform" title="Get Notified for El Teide Climbing Slots" style="display: flex; align-items: center; text-decoration: none;">
+            <img src="https://teidepermit.eu/pl.png" alt="Polish Flag" width="25" height="25" style="margin-right: 5px;">
+            <span style="font-size: 16px;">Get Notified(PL)</span>
+        </a>
+        </div>
+
+        <p style="text-align:center;">
         <img src="https://pbs.twimg.com/profile_images/942875534916276225/i4UFlNlV_400x400.jpg" alt="Logo" class="logo">
 
 </p>
@@ -192,7 +221,7 @@ margin: 0 auto;
             </blockquote>
         </div>
     </div>
-    <p style="color:gray;font-size:12px;text-align:right;">Teneryfa Facebook group</p>
+    <p style="color:gray;font-size:12px;text-align:right;"><a href="https://www.facebook.com/groups/teneryfa24/permalink/7719112111452035/">Teneryfa Facebook group</a></p>
     </div>
     </div>
  
