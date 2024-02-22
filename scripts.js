@@ -27,14 +27,3 @@ const observer = new IntersectionObserver((entries) => {
 
 // Rozpocznij obserwowanie pojemnika
 observer.observe(satisfiedContainer);
-
-// Dodaj funkcję do zmiany języka
-function changeLanguage(lang) {
-    let newUrl;
-    if (lang === 'en') {
-        newUrl = '/index.html';
-    } else if (lang === 'pl') {
-        newUrl = '/index-pl.html';
-    }
-    window.location.href = newUrl;
-}
