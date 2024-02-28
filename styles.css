@@ -72,6 +72,19 @@ p {
     color: #eee;
 }
 
+.link.masca {
+    background-color: #27b91d;
+}
+
+.link.masca:hover {
+    background-color: #37d22a; /* Darker purple on hover */
+    color: #eee;
+}
+
+h2{
+    color: black;
+}
+
 .seo {
     position: absolute;
     transform: translate(-99999px, -99999px);
@@ -150,6 +163,7 @@ p {
     .link2 {
         margin-top: 12px;
     }
+
 
 }
 
