@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /nothing
 
 Sitemap: https://teidepermit.eu/sitemap.xml
