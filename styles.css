@@ -62,7 +62,8 @@ p {
     text-decoration: none;
     border-radius: 8px;
     font-size: 18px;
-    width: 260px;
+    width: 100%;
+    max-width: 260px;
     margin: 0 auto;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -152,20 +153,22 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 5px;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.link2 {
+    margin-top: 12px;
 }
 
 @media (max-width: 992px) {
     .buttonz {
         flex-direction: column;
     }
-    .link2 {
-        margin-top: 12px;
-    }
-
-
 }
+
 
  .language-flags {
      position: absolute;
@@ -210,3 +213,52 @@ h2{
     background-color: rgba(0, 0, 0, 0.0);
     padding: 20px;
 }
+
+.card {/*
+    border-radius: 30px;*/
+   /* background: #ececec;*/
+/*    padding: 10px;*/
+  /*  overflow: hidden;*/
+    width: 45%;
+    background: #f3f3f3;
+    border-radius: 10px;
+    padding-bottom: 12px;
+}
+
+.card__image{
+    background: url('./teide5.jpeg') no-repeat;
+    /*background-position: 0px 0px ;*/
+    background-size: cover;
+    height: 170px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__image.masca {
+    background: url('./masca5.jpeg') no-repeat;
+    background-size: cover;
+}
+.card__title {
+    margin: 0px;
+    text-align: center;
+    color: black;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+    .cards {
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
