@@ -1,12 +1,12 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 20px;
     padding: 0;
     background: url('bg.jpeg') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
     color: #800080; /* Purple text color */
+    margin: 0;
 
 }
 *{
@@ -203,4 +203,10 @@ h2{
     .logo-container {
         flex-direction: column;
     }
+}
+
+
+.main {
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 20px;
 }
