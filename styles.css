@@ -2,7 +2,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
-    background: url('bg.jpeg') no-repeat center center fixed;
+    background: url(bgt1.jpg) no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
     color: #800080; /* Purple text color */
