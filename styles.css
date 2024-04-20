@@ -324,3 +324,25 @@ h2{
     padding: 8px;
     color: black;
 }
+
+.full-img {
+    width: 100%;
+    padding: 24px;
+}
+.review-imgs {
+    text-align: center;
+}
+.small-img {
+    max-width: 350px;
+    display: inline-block;
+    padding: 10px;
+}
+.medium-img {
+    max-width: 350px;
+}
+
+.post-comment{
+    text-align:left;
+    color: black;
+    margin-bottom: 12px;
+}
