@@ -1,6 +1,6 @@
 // JavaScript do zwiększania licznika zadowolonych klientów, gdy element jest widoczny
 let satisfiedCustomers = 0;
-const targetSatisfiedCustomers = 300;
+const targetSatisfiedCustomers = 350;
 
 function updateSatisfiedCounter() {
     document.getElementById('satisfiedCounter').innerText = satisfiedCustomers;

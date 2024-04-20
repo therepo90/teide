@@ -298,3 +298,29 @@ h2{
 .exts{
     margin-top: 50px;
 }
+
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulseColor 0.4s infinite alternate; /* Added animation */
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 2px;
+}
+@keyframes pulseColor {
+    0% {
+        background-color: #00e100;
+    }
+    100% {
+        background-color: #00ff00; /* Change the color here */
+    }
+}
+.status-container{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    color: black;
+}
