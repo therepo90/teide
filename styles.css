@@ -200,11 +200,11 @@ h2{
 .partners {
     margin-top: 10px;
 }
-.partners-container {
+.partners-mentioned-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 4px;
     flex-wrap: wrap;
     max-width: 600px;
     margin: 0 auto;
