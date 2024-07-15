@@ -309,6 +309,11 @@ h2{
     margin-left: 8px;
     margin-right: 8px;
     margin-top: 2px;
+
+
+}
+.dot.red {
+    background-color: red;
 }
 @keyframes pulseColor {
     0% {
