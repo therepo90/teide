@@ -314,6 +314,7 @@ h2{
 }
 .dot.red {
     background-color: red;
+    animation: none;
 }
 @keyframes pulseColor {
     0% {
