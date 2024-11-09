@@ -324,6 +324,11 @@ h2{
         background-color: #00ff00; /* Change the color here */
     }
 }
+
+.disabled {
+    background: gray !important;
+    cursor: not-allowed;
+}
 .status-container{
     display: flex;
     align-items: center;
