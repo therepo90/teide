@@ -1,1 +1,8 @@
 .idea
+.cache
+dist
+node_modules
+tmp
+#ignore zone identifiers, file ending with: Zone.Identifier
+*Zone.Identifier
+
