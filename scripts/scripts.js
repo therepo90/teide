@@ -107,12 +107,3 @@ function initModalStuff(btnId, modalId, target, lang) {
         }
     });
 }
-
-window.addEventListener('DOMContentLoaded', (event) => {
-    if(window.location.href.indexOf('index-pl.html') > -1) {
-        initModalStuff('teideTripPL', 'modal_teide_pl', 'teide', 'pl');
-    }else{
-        initModalStuff('teideTripEN', 'modal_teide_en', 'teide', 'en');
-        initModalStuff('teideTripPL', 'modal_teide_pl', 'teide', 'pl');
-    }
-});

@@ -81,23 +81,11 @@
                        id="teideTripEN"
                        style="display: flex; align-items: center; text-decoration: none;">
                         <img src="assets/eu.png"
-                             alt="Polish Flag"
+                             alt="Eu Flag"
                              width="30"
                              height="30"
                              style="margin-right: 5px;">
-                        <span style="font-size: 16px;">Get email alerts (EN)</span>
-                    </a>
-                    <a class="link link2"
-                       id="teideTripPL"
-                       href="#"
-                       title="Get Notified for El Teide Climbing vacancy"
-                       style="display: flex; align-items: center; text-decoration: none;">
-                        <img src="assets/pl.png"
-                             alt="Polish Flag"
-                             width="25"
-                             height="25"
-                             style="margin-right: 5px;">
-                        <span style="font-size: 16px;">Get email alerts (PL)</span>
+                        <span style="font-size: 16px;">Get email alerts</span>
                     </a>
                     <div class="status-container"><span><b>Status:</b> Working</span>
                         <div class="dot"></div>
@@ -116,24 +104,13 @@
                        title="Get Notified for Masca vacancies"
                        style="display: flex; align-items: center; text-decoration: none;">
                         <img src="assets/eu.png"
-                             alt="Polish Flag"
+                             alt="Eu Flag"
                              width="30"
                              height="30"
                              style="margin-right: 5px;">
-                        <span style="font-size: 16px;">Get email alerts (EN)</span>
+                        <span style="font-size: 16px;">Get email alerts</span>
                     </a>
                     <!-- https://docs.google.com/forms/d/e/1FAIpQLScfLS07U_M-rZbV009PY81AD2zW8rwN3Duj8MVOgsi4Gi0W1w/viewform?usp=sf_link -->
-                    <a class="link link2 masca disabled"
-                       href="#"
-                       title="Get Notified for Masca Vacancies"
-                       style="display: flex; align-items: center; text-decoration: none;">
-                        <img src="assets/pl.png"
-                             alt="Polish Flag"
-                             width="25"
-                             height="25"
-                             style="margin-right: 5px;">
-                        <span style="font-size: 16px;">Get email alerts (PL)</span>
-                    </a>
                     <div class="status-container"><span><b>Status:</b> Halt</span>
                         <div class="dot red"></div>
                     </div>
@@ -313,18 +290,27 @@
                         Where did you hear about us from?(Fb group etc...): <span class="star-req">*</span>
                         <input type="text" name="fbGroup" required>
                     </label>
+                    <label>
+                        Currency: <span class="star-req">*</span>
+                        <select name="currency" required value="EUR">
+                            <option value="EUR">EUR</option>
+                            <option value="PLN">PLN</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </label>
                 </form>
             </div>
             <ul class="info-list">
                 <li>
                     To limit the number of simultaneous users of the app and increase the chances of booking a seat, the
-                    service is charged €7.
+                    service is charged <b>€7</b>.
                 </li>
                 <li>
-                    You get 10 notifications at €0.7 each and the ability to renew notifications free of
+                    <b>You get 10 notifications at €0.7 each</b> and the ability to renew notifications free of
                     charge until they expire.
                 </li>
-                <li>Guaranteed booking or refund.</li>
+                <li><b>Guaranteed booking or refund.</b></li>
 
             </ul>
 
@@ -339,63 +325,10 @@
 </div>
 
 
-<div class="modal" id="modal_teide_pl">
-    <input class="modal-checkbox" type="checkbox" id="modal_teide_pl_checkbox"/>
-    <label for="modal_teide_pl_checkbox" class="overlay"></label>
-    <article>
-        <header>
-            <h3>Wolne miejsca El Teide</h3>
-            <label for="modal_teide_pl_checkbox" class="close">&times;</label>
-        </header>
-        <section class="content">
-            <div class="flex center">
-                <form class="modalForm">
-                    <p>Otrzymuj powiadomienia o wolnych miejscach </p>
-                    <label>
-                        Twój email: <span class="star-req">*</span>
-                        <input type="email" name="email" required>
-                    </label>
-                    <label>
-                        Data początkowa: <span class="star-req">*</span>
-                        <input type="text" name="startDate" required>
-                    </label>
-                    <label>
-                        Data końcowa: <span class="star-req">*</span>
-                        <input type="text" name="endDate" required>
-                    </label>
-                    <label>
-                        Gdzie o nas usłyszałeś?(Nazwa grupy FB itd...): <span class="star-req">*</span>
-                        <input type="text" name="fbGroup" required>
-                    </label>
-                </form>
-            </div>
-            <ul class="info-list">
-                <li>
-                    Aby ograniczyć ilość jednoczesnych osób korzystających z aplikacji i zwiększyć szanse na
-                    zarezerwowanie terminu usługa jest płatna 7€.
-                </li>
-                <li>Uzyskujesz 10 powiadomień po 0.7€ i możliwość bezpłatnego przedłużania notyfikacji do
-                    skutku.
-                </li>
-                <li>Gwarancja rezerwacji lub zwrot pieniędzy.</li>
-
-            </ul>
-
-        </section>
-        <footer>
-            <a class="button modal-payment-btn" href="#">Przejdź do płatności</a>
-            <label for="modal_teide_pl_checkbox" class="button dangerous">
-                Anuluj
-            </label>
-        </footer>
-    </article>
-</div>
-
 <script>
 
     window.addEventListener('DOMContentLoaded', (event) => {
             initModalStuff('teideTripEN', 'modal_teide_en', 'teide', 'en');
-            initModalStuff('teideTripPL', 'modal_teide_pl', 'teide', 'pl');
     });
 </script>
 </body>
