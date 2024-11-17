@@ -107,3 +107,4 @@ function initModalStuff(btnId, modalId, target, lang) {
         }
     });
 }
+window.initModalStuff = initModalStuff;
