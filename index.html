@@ -27,7 +27,7 @@
     <meta property="og:url" content="https://teidepermit.eu/">
     <link rel="canonical" href="https://teidepermit.eu/">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link rel="stylesheet" href="vendor/picnic.min.less">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="scripts/scripts.js" defer></script>
@@ -87,7 +87,8 @@
                              style="margin-right: 5px;">
                         <span style="font-size: 16px;">Get email alerts</span>
                     </a>
-                    <div class="status-container"><span><b>Status:</b> Working</span>
+                    <div class="status-container">
+                        <span><b>Status:</b> Working</span>
                         <div class="dot"></div>
                     </div>
                 </div>
@@ -292,8 +293,8 @@
                     </label>
                     <label>
                         Currency: <span class="star-req">*</span>
-                        <select name="currency" required value="EUR">
-                            <option value="EUR">EUR</option>
+                        <select name="currency" required>
+                            <option value="EUR" selected>EUR</option>
                             <option value="PLN">PLN</option>
                             <option value="USD">USD</option>
                             <option value="GBP">GBP</option>
