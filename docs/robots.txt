@@ -1,5 +1,5 @@
 User-agent: *
-Allow: /
-Disallow: /nothing
+Disallow: /terms_and_conditions.html
+Disallow: /terms_and_conditions-pl.html
 
 Sitemap: https://teidepermit.eu/sitemap.xml
