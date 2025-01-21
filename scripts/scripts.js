@@ -2,7 +2,7 @@
 import {config} from "./cfg";
 
 let satisfiedCustomers = 0;
-const targetSatisfiedCustomers = 350;
+const targetSatisfiedCustomers = 450;
 
 function updateSatisfiedCounter() {
     document.getElementById('satisfiedCounter').innerText = satisfiedCustomers;

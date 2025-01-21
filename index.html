@@ -31,6 +31,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="scripts/scripts.js" defer></script>
+
+
+    <!-- Dane strukturalne dla Google -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "TeidePermit",
+            "url": "https://www.trustpilot.com/review/teidepermit.eu",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "bestRating": "5",
+                "ratingCount": "11"
+            }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -125,6 +143,8 @@
         </p>
         <span>by <a href="https://therepo90.github.io/"
                     style="text-decoration: underline;color:unset;">RepoGamesStudio</a></span>
+
+
     </div>
     <div class="container" style="margin-top: 15px;padding-bottom: 35px;">
         <p><b>Details:</b> <br>
@@ -149,7 +169,7 @@
         </p>
 
     </div>
-    <div class="container" style="margin-top: 15px;padding-bottom: 35px; max-width: 250px;text-align:center;">
+    <div class="container" style="margin-top: 15px;padding-bottom: 35px; text-align:center;">
         <div class="counter-container" id="satisfiedContainer">
             <p><b>Satisfied Customers:</b></p>
             <div class="counter" id="satisfiedCounter">0</div>
@@ -158,6 +178,19 @@
     <div class="container" style="margin-top: 15px;text-align: center">
         <div>
             <p><b>Reviews:</b></p>
+            <div class="stars-container">
+                <div class="stars">
+                    <img src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-4.5.svg"
+                         alt="Ocena 4.6 gwiazdek na Trustpilot" width="200">
+                    <div class="rating">
+                        <strong>"Excellent" -
+                            <a href="https://www.trustpilot.com/review/teidepermit.eu" target="_blank" class="trustpilot-link">
+                                <strong>Trustpilot</strong>
+                            </a></strong>
+                    </div>
+                </div>
+            </div>
+
             <div class="container-ts">
                 <div class="testimonial">
                     <blockquote>
@@ -331,6 +364,7 @@
             initModalStuff('teideTripEN', 'modal_teide_en', 'teide', 'en');
     });
 </script>
+
 </body>
 
 </html>
