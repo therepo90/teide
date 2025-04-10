@@ -149,7 +149,7 @@
                     <!-- https://docs.google.com/forms/d/e/1FAIpQLSe8xcooZaoYbz-BGswtOmRjPpqzl6m_XgnRI3scVhfCtI_j1g/viewform?usp=sf_link -->
                     <a class="link link2 masca"
                        href="#"
-                       id="caminoTripEN"
+                       id="caminoTripPL"
                        title=" Caminito Del Rey "
                        style="display: flex; align-items: center; text-decoration: none;">
                         <img src="assets/eu.png"
@@ -416,6 +416,66 @@
     </article>
 </div>
 
+<div class="modal" id="modal_camino_pl">
+    <input class="modal-checkbox" type="checkbox" id="modal_camino_pl_checkbox"/>
+    <label for="modal_camino_pl_checkbox" class="overlay"></label>
+    <article>
+        <header>
+            <h3>Wolne miejsca El Camino Del Rey</h3>
+            <label for="modal_camino_pl_checkbox" class="close">&times;</label>
+        </header>
+        <section class="content">
+
+            <p>Otrzymuj powiadomienia o wolnych miejscach </p>
+            <div class="flex center">
+                <form class="modalForm" >
+                    <label>
+                        Twój email: <span class="star-req">*</span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        Data początkowa: <span class="star-req">*</span>
+                        <input type="text" name="startDate" required>
+                    </label>
+                    <label>
+                        Data końcowa: <span class="star-req">*</span>
+                        <input type="text" name="endDate" required>
+                    </label>
+                    <label>
+                        Gdzie o nas usłyszałeś?(Nazwa grupy FB itd...): <span class="star-req">*</span>
+                        <input type="text" name="fbGroup" required>
+                    </label>
+                    <label>
+                        Waluta: <span class="star-req">*</span>
+                        <select name="currency" required>
+                            <option value="EUR">EUR</option>
+                            <option value="PLN" selected>PLN</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+            <p>
+            <ul class="info-list">
+                <li>
+                    Aby ograniczyć ilość jednoczesnych osób korzystających z aplikacji i zwiększyć szanse na zarezerwowanie terminu usługa jest płatna <b>7€(ok 29zł)</b>.
+                </li>
+                <li><b>Uzyskujesz 7 powiadomień po 1€.(ok 2.9zł)</b></li>
+                <li><b>Gwarancja rezerwacji lub zwrot pieniędzy.</b></li>
+            </ul>
+            </p>
+
+        </section>
+
+        <footer>
+            <a class="button modal-payment-btn" href="#" >Przejdź do płatności</a>
+            <label for="modal_camino_pl_checkbox" class="button dangerous">
+                Anuluj
+            </label>
+        </footer>
+    </article>
+</div>
 
 <script>
 
