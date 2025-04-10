@@ -8,7 +8,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Pico del Teide & Masca Gorge Trail permits</title>
+    <title>Teide & Masca & Camino(Malaga) permits</title>
     <base href="/">
     <meta name="description" content="Get instant email notifications when permits to Pico Del Teide & Masca Gorge Trail become available. Book your spot easily!">
     <meta name="keywords" content="Pico Del Teide permit, Masca Gorge Trail booking, Tenerife hiking, free Teide reservations, hiking in Tenerife">
@@ -94,7 +94,7 @@
 
 <body>
 <div class="main">
-    <h1>Pico del Teide & Masca Gorge Trail permits</h1>
+    <h1>Pico del Teide & Masca Gorge Trail & Caminito permits</h1>
     <h2 style="text-align:center;color:white;">Get notified when there are available seats</h2>
     <div class="container">
         <p>So you have planned your trip to Tenerife, but there are no free places to climb to the top of Pico Del Teide
@@ -149,6 +149,29 @@
                     <!-- https://docs.google.com/forms/d/e/1FAIpQLScfLS07U_M-rZbV009PY81AD2zW8rwN3Duj8MVOgsi4Gi0W1w/viewform?usp=sf_link -->
                     <div class="status-container"><span><b>Status:</b> Halt</span>
                         <div class="dot red"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image camino"></div>
+                <h3 class="card__title">Caminito Del Rey(Malaga)</h3>
+                <div class="buttonz">
+                    <!-- https://docs.google.com/forms/d/e/1FAIpQLSe8xcooZaoYbz-BGswtOmRjPpqzl6m_XgnRI3scVhfCtI_j1g/viewform?usp=sf_link -->
+                    <a class="link link2 masca"
+                       href="#"
+                       id="caminoTripEN"
+                       title="Get Notified for Caminito Del Rey vacancies"
+                       style="display: flex; align-items: center; text-decoration: none;">
+                        <img src="assets/eu.png"
+                             alt="Eu Flag"
+                             width="30"
+                             height="30"
+                             style="margin-right: 5px;">
+                        <span style="font-size: 16px;">Get email alerts</span>
+                    </a>
+                    <!-- https://docs.google.com/forms/d/e/1FAIpQLScfLS07U_M-rZbV009PY81AD2zW8rwN3Duj8MVOgsi4Gi0W1w/viewform?usp=sf_link -->
+                    <div class="status-container"><span><b>Status:</b> Working</span>
+                        <div class="dot green"></div>
                     </div>
                 </div>
             </div>
@@ -406,11 +429,69 @@
     </article>
 </div>
 
+<div class="modal" id="modal_camino_en">
+    <input class="modal-checkbox" type="checkbox" id="modal_camino_en_checkbox"/>
+    <label for="modal_camino_en_checkbox" class="overlay"></label>
+    <article>
+        <header>
+            <h3>Camino tickets notifications</h3>
+            <label for="modal_camino_en_checkbox" class="close">&times;</label>
+        </header>
+        <section class="content">
+            <p>Get notified when there are free places</p>
+            <div class="flex center">
+                <form class="modalForm">
+                    <label>
+                        Your email: <span class="star-req">*</span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        Start Date: <span class="star-req">*</span>
+                        <input type="text" name="startDate" required>
+                    </label>
+                    <label>
+                        End Date: <span class="star-req">*</span>
+                        <input type="text" name="endDate" required>
+                    </label>
+                    <label>
+                        Where did you hear about us from?(Fb group etc...): <span class="star-req">*</span>
+                        <input type="text" name="fbGroup" required>
+                    </label>
+                    <label>
+                        Currency: <span class="star-req">*</span>
+                        <select name="currency" required>
+                            <option value="EUR" selected>EUR</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+            <ul class="info-list">
+                <li>
+                    To limit the number of simultaneous users of the app and increase the chances of booking a seat, the
+                    service is charged <b>€7</b>.
+                </li>
+                <li>
+                    <b>You get 7 notifications at 1€ each</b>
+                </li>
+                <li><b>Guaranteed booking or refund.</b></li>
+
+            </ul>
+
+        </section>
+        <footer>
+            <a class="button modal-payment-btn" href="#">Go to payment</a>
+            <label for="modal_camino_en_checkbox" class="button dangerous">
+                Cancel
+            </label>
+        </footer>
+    </article>
+</div>
 
 <script>
 
     window.addEventListener('DOMContentLoaded', (event) => {
             initModalStuff('teideTripEN', 'modal_teide_en', 'teide', 'en');
+            initModalStuff('caminoTripEN', 'modal_camino_en', 'camino', 'en');
     });
 </script>
 

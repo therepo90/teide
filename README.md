@@ -1,1 +1,1 @@
-# teide-terms
+# teide

@@ -34,12 +34,19 @@ observer.observe(satisfiedContainer);
 
 function openTripModal (trip, lang) {
     //console.log({a:this, arguments})
-    console.log('opening modal');
+    console.log('opening modal'+trip);
     if(trip==='teide' && lang==='en') {
         document.getElementById('modal_teide_en').getElementsByClassName('modal-checkbox')[0].checked = true;
     }
     if(trip==='teide' && lang==='pl') {
         document.getElementById('modal_teide_pl').getElementsByClassName('modal-checkbox')[0].checked = true;
+    }
+
+    if(trip==='camino' && lang==='en') {
+        document.getElementById('modal_camino_en').getElementsByClassName('modal-checkbox')[0].checked = true;
+    }
+    if(trip==='camino' && lang==='pl') {
+        document.getElementById('modal_camino_pl').getElementsByClassName('modal-checkbox')[0].checked = true;
     }
 }
 
@@ -80,6 +87,9 @@ function initModalStuff(btnId, modalId, target, lang) {
             switch (target) {
                 case 'teide':
                     targetUrl = lang==='pl' ? `${apiBase}/api/teide-add`: `${apiBase}/api/teide-eng-add`;
+                    break;
+                case 'camino':
+                    targetUrl = `${apiBase}/api/camino-eng-add`;
                     break;
                 default:
                     throw new Error('Invalid target');

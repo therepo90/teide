@@ -15,6 +15,8 @@ if (process.env.NODE_ENV === 'development') {
     cfg = env.DEV;
 } else if (process.env.NODE_ENV === 'production') {
     cfg = env.PROD;
+} else if (process.env.NODE_ENV === 'frontend') {
+    cfg = env.PROD;
 }else{
     cfg = env.DEV;
 }
