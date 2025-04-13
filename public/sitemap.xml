@@ -14,15 +14,4 @@
         <xhtml:link rel="alternate" hreflang="pl" href="https://teidepermit.eu/pl" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://teidepermit.eu" />
     </url>
-
-    <url>
-        <loc>https://teidepermit.eu/pl/</loc>
-        <lastmod>2025-01-28</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.70</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://teidepermit.eu/" />
-        <xhtml:link rel="alternate" hreflang="pl" href="https://teidepermit.eu/pl" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://teidepermit.eu/pl" />
-    </url>
-
 </urlset>
