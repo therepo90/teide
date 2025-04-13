@@ -1,5 +1,6 @@
+Sitemap: https://teidepermit.eu/sitemap.xml
+
 User-agent: *
+Allow: /
 Disallow: /terms_and_conditions.html
 Disallow: /terms_and_conditions-pl.html
-
-Sitemap: https://teidepermit.eu/sitemap.xml
