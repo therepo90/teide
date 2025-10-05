@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "rm -rf dist && parcel index.html",
+    "start:pl": "rm -rf dist && parcel index_pl.html",
     "start:feonly": "rm -rf dist && NODE_ENV=frontend parcel index.html",
     "build": "rm -rf dist && parcel build index.html --experimental-scope-hoisting",
     "prepare-langs": "mkdir -p docs/en && cp -r docs/index.html docs/en/index.html && mkdir -p docs/pl && cp -r docs/index_pl.html docs/pl/index.html",
